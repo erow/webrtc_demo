@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Realtime communication with WebRTC</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+
+  <h1>Realtime communication with WebRTC</h1>
+  <p> 1.
+    <button onclick="createPeerConnection(true)">call</button>
+    <button onclick="createPeerConnection(false)">recv</button>
+  </p>
+  <div id="msg">
+    2.msg <hr>
+  </div>
+  <p>3.
+    <button id="answer">answer</button>
+    <textarea id="sdp"></textarea>
+  </p>
+  
+  <div id="videos">4.
+    <textarea id="localText"></textarea>
+    <button id="send">send=>></button>
+    <textarea id="remoteText"></textarea>
+  </div>
+  <script src="js/lib/adapter.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
